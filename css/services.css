@@ -1,0 +1,129 @@
+    .services-div {
+        z-index: 4;
+        background: #422719;
+        background: linear-gradient(360deg, rgba(66, 39, 25, 1) 0%, rgba(0, 0, 0, 1) 53%);
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        padding-top: 10px;
+        min-height: 80vh;
+        max-height: fit-content;
+        overflow: hidden;
+    }
+
+    .service-icon {
+        display: flex;
+        max-width: 40px;
+        max-height: 40px;
+        min-width: 40px;
+        min-height: 40px;
+}
+
+    .services-header {
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .header-text{
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        font-size: clamp(24px, 5vw, 38px);
+        
+
+    }
+
+    .services-offered {
+        margin-top: 10px;
+        display: flex;
+        column-gap: 10px;
+        row-gap: 10px;
+        flex: 1;
+        max-width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+    }
+
+    .service-item {
+        background-color: rgba(255, 255, 255, 0.13);
+        padding: 10px;
+        border-radius: 5px;
+        max-width: 13vw;
+        min-width: 10px;
+        height: 50vh;
+        transition: 0.3s;
+    }
+
+    .service-item:hover {
+        box-shadow: 0px 0px 7px rgb(255,255,255, 0.4);
+    }
+
+    .service-item p {
+        text-align: left;
+    }
+
+    .service-item span {
+        font-weight: 500;
+        font-size: clamp(14px, 100vh, 22px);
+        transition: 0.7s;
+    }
+
+    
+
+    @media (max-width: 1200px) {
+
+        .service-item:hover span {
+        font-weight: 500;
+        font-size: 16px;
+    }
+        .service-description {
+            display: none;
+        }
+
+        .services-offered {
+            flex: 1;
+        }
+
+        .service-item {
+            padding: 8px;
+            max-width: 100%;
+            width: 30%;
+            height: auto;
+        }
+
+        .service-item span {
+            font-size: 14px;
+        }
+
+    
+
+       
+    }
+    
+    @media (max-height: 500px) {
+
+        .service-item:hover span {
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+        .service-description {
+            display: none;
+        }
+
+        .service-item {
+            padding: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+        }
+
+    }
+
+
+

@@ -1,0 +1,37 @@
+html {
+  scroll-behavior: smooth; 
+  scroll-padding-top: 20vh;
+}
+
+body {
+    margin: 0px;
+    background: #EA5C1F;
+    background: radial-gradient(circle, rgba(234, 92, 31, 1) 0%, rgba(26, 26, 26, 1) 100%);
+}
+
+a {
+    font-family: Montserrat;
+}
+
+
+h2 {
+    font-family: Montserrat;
+    color: rgb(240,240,240);
+    font-size: 14px;
+    font-weight: 200;
+    text-align: justify;
+}
+
+p {
+    font-family: Montserrat;
+    color: rgb(240,240,240);
+    font-size: 14px;
+    font-weight: 200;
+    text-align: justify;
+    text-wrap: wrap;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
