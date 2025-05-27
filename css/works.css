@@ -5,6 +5,7 @@
     z-index: 3;
     align-items: top;
     overflow-x: auto;
+    scrollbar-width: thin;
     min-height: 300px;
     white-space: nowrap;
     height: 80vh;
