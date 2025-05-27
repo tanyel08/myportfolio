@@ -1,0 +1,122 @@
+.header-div {
+    z-index: 7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    height: 15vh;
+    min-height: 70px;
+    background-color: rgb(24, 24, 24);
+    padding: 1.2%;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.767);
+}
+
+.left-side-nav{
+    display: flex;
+    align-items: center;
+    margin-right: 2vw;
+    
+}
+
+.right-side-nav{
+    display: flex;
+    flex: 3;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    align-items: center;
+    height: auto;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    z-index: 6;
+    width: 100%;
+    transform: translateY(-21vh);
+    position:fixed;
+    top: 20vh;
+    background: #404040;
+    background: radial-gradient(circle, rgba(163, 163, 163, 0.5) 0%, rgba(73, 73, 73, 0.5) 100%);
+    box-shadow: 0px 2px 5px;
+    backdrop-filter: blur(5px);
+}
+
+.inside-anchor {
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #dedede;
+    transition: 0.3s;
+}
+
+.inside-anchor:hover{
+    
+    background: #dedede;
+    background: radial-gradient(circle, rgba(222, 222, 222, 0) 0%, rgba(224, 224, 224, 0.4) 100%);
+}
+
+
+
+.contact-me{
+    display: flex;
+    align-items: center;
+    margin-left: 1vw;    
+    border-radius: 10px;
+    border-style: none;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: clamp(14px, 3vw, 22px);
+    height: 70%;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    background: radial-gradient(circle, rgba(237, 204, 114, 1) 0%, rgba(234, 92, 31, 1) 100%);
+    background-size: 1000%;
+    background-position: 0px;
+    color: rgb(24, 24, 24);
+    cursor: pointer;
+    transition: 0.7s;
+    width: auto;
+}
+
+.contact-me:hover {
+    background-position: 1000px;
+    color: rgb(36, 28, 22);
+}
+
+.anchor-nav{
+    margin: 1vw;
+    font-size: clamp(14px, 3vw, 20px);
+    font-weight: 500;
+    color: #dedede;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.anchor-nav:hover{
+    color:#ea5c1f;
+}
+
+#social-media {
+    transition: transform 0.7s;
+}
+
+#toggle:checked ~ #social-media {
+    transform: translateY(0);
+}
+
+
+.logo {
+     height: calc(2vw + 10vh);
+    min-height: 50px;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
